@@ -1,4 +1,4 @@
-=== PMPro Register Helper ===
+=== PMPro Stripe Lite  ===
 Contributors: strangerstudios
 Tags: pmpro, paid memberships pro, stripe, checkout, membership, members
 Requires at least: 3.0
