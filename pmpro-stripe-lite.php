@@ -3,13 +3,15 @@
 Plugin Name: PMPro Stripe Lite
 Plugin URI: http://www.paidmembershipspro.com/wp/pmpro-stripe-lite/
 Description: Updates the checkout page to use the bare minimum fields for credit card checkout.
-Version: .1
+Version: .1.1
 Author: Stranger Studios
 Author URI: http://www.strangerstudios.com
 */
 
 global $pmpro_stripe_lite;
 $pmpro_stripe_lite = true;
+
+add_filter("pmpro_stripe_lite", "__return_true");
 
 /*
 	use our checkout template
