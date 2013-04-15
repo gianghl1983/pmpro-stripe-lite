@@ -20,7 +20,7 @@
 	<ul>
 		<li><strong>Account:</strong> <?php echo $pmpro_invoice->user->display_name?> (<?php echo $pmpro_invoice->user->user_email?>)</li>
 		<li><strong>Membership Level:</strong> <?php echo $pmpro_invoice->membership_level->name?></li>
-		<?php if($pmpro_invoice->membership_level->enddate) { ?>
+		<?php if(!empty($pmpro_invoice->membership_level->enddate)) { ?>
 			<li><strong>Membership Expires:</strong> <?php echo date("n/j/Y", $pmpro_invoice->membership_level->enddate)?></li>
 		<?php } ?>
 		<?php if($pmpro_invoice->getDiscountCode()) { ?>
